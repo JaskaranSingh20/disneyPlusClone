@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #040714;
+  color: #f9f9f9;
+   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.viewer_h{
+  transition: all ease-in;
+  transition-duration: 200ms;
+}
+
+.slick-list{
+  overflow: visible;
+}
+
+.v_hover:hover{
+  border-color: rgba(249, 249, 249, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,rgba(0, 0, 0, 0.72) 0px 30px 22px -10px ;
+}
+
+.slick-dots li.slick-active button:before{
+  opacity: 0.5;
+  color: white !important;
+}
+
+.slider_shadow{
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px,rgba(0, 0, 0, 0.73) 0px 16px 10px -10px ;
+}
+
+
+a{
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  body{
+    font-size: 14px;
+  }
+
+  .slick-slider{
+    height: 18vh;
+  }
+
+  .slick-slider img{
+    height: 18vh;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
